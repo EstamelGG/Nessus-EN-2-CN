@@ -1,0 +1,1122 @@
+Plugin ID,CVE,CVSS,Risk,Host,Protocol,Port,Name,Synopsis,Description,Solution,See Also,Plugin Output
+"10107","","","None","10.8.20.18","tcp","80","HTTP Server Type and Version","A web server is running on the remote host.","This plugin attempts to determine the type and the version of the
+  remote web server.","n/a","","The remote web server type is :
+
+Microsoft-IIS/7.5"
+"10287","","","None","10.8.20.18","udp","0","Traceroute Information","It was possible to obtain traceroute information.","Makes a traceroute to the remote host.","n/a","","For your information, here is the traceroute from 192.168.52.130 to 10.8.20.18 : 
+192.168.52.130
+?
+10.8.20.18
+
+Hop Count: 2
+"
+"10736","","","None","10.8.20.18","tcp","135","DCE Services Enumeration","A DCE/RPC service is running on the remote host.","By sending a Lookup request to the portmapper (TCP 135 or epmapper
+PIPE) it was possible to enumerate the Distributed Computing
+Environment (DCE) services running on the remote port. Using this
+information it is possible to connect and bind to each service by
+sending an RPC request to the remote port/pipe.","n/a","","
+The following DCERPC services are available locally :
+
+Object UUID : 765294ba-60bc-48b8-92e9-89fd77769d91
+UUID : d95afe70-a6d5-4259-822e-2c84da1ddb0d, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : WindowsShutdown
+
+Object UUID : 765294ba-60bc-48b8-92e9-89fd77769d91
+UUID : d95afe70-a6d5-4259-822e-2c84da1ddb0d, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : WMsgKRpc077C00
+
+Object UUID : b08669ee-8cb5-43a5-a017-84fe00000000
+UUID : 76f226c3-ec14-4325-8a99-6a46348418af, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : WindowsShutdown
+
+Object UUID : b08669ee-8cb5-43a5-a017-84fe00000000
+UUID : 76f226c3-ec14-4325-8a99-6a46348418af, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : WMsgKRpc077C00
+
+Object UUID : 6d726574-7273-0076-0000-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Local RPC service
+Named pipe : LRPC-0facb123f118d123d1
+
+Object UUID : b08669ee-8cb5-43a5-a017-84fe00000001
+UUID : 76f226c3-ec14-4325-8a99-6a46348418af, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : WMsgKRpc077F21
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d6, version 1.0
+Description : Unknown RPC service
+Annotation : DHCPv6 Client LRPC Endpoint
+Type : Local RPC service
+Named pipe : dhcpcsvc6
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 44e265dd-7daf-42cd-8560-3cdb6e7a2729, version 1.0
+Description : Unknown RPC service
+Annotation : TsProxy
+Type : Local RPC service
+Named pipe : AAGMgmt
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 958f92d8-da20-467a-bbe3-65e7e9b4edcf, version 1.0
+Description : Unknown RPC service
+Annotation : TsProxyMgmt
+Type : Local RPC service
+Named pipe : AAGMgmt
+
+Object UUID : 830e6817-92cc-4044-bf4e-538a212869e5
+UUID : 906b0ce0-c70b-1067-b317-00dd010662da, version 1.0
+Description : Distributed Transaction Coordinator
+Windows process : msdtc.exe
+Type : Local RPC service
+Named pipe : LRPC-47eafad44bd0605885
+
+Object UUID : 10c40e13-7070-43b8-9324-3556fe444cbb
+UUID : 906b0ce0-c70b-1067-b317-00dd010662da, version 1.0
+Description : Distributed Transaction Coordinator
+Windows process : msdtc.exe
+Type : Local RPC service
+Named pipe : LRPC-47eafad44bd0605885
+
+Object UUID : 90ab8ced-6b85-48b3-9767-ddd71f74f4da
+UUID : 906b0ce0-c70b-1067-b317-00dd010662da, version 1.0
+Description : Distributed Transaction Coordinator
+Windows process : msdtc.exe
+Type : Local RPC service
+Named pipe : LRPC-47eafad44bd0605885
+
+Object UUID : 387f16d1-f908-433f-a2be-3ef465601516
+UUID : 906b0ce0-c70b-1067-b317-00dd010662da, version 1.0
+Description : Distributed Transaction Coordinator
+Windows process : msdtc.exe
+Type : Local RPC service
+Named pipe : LRPC-47eafad44bd0605885
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Local RPC service
+Named pipe : LRPC-8d4945acace1fd47e8
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Local RPC service
+Named pipe : audit
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Local RPC service
+Named pipe : securityevent
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Local RPC service
+Named pipe : LSARPC_ENDPOINT
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Local RPC service
+Named pipe : lsapolicylookup
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Local RPC service
+Named pipe : lsasspirpc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Local RPC service
+Named pipe : protected_storage
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Local RPC service
+Named pipe : dsrole
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Local RPC service
+Named pipe : samss lpc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345678-1234-abcd-ef00-0123456789ab, version 1.0
+Description : IPsec Services (Windows XP & 2003)
+Windows process : lsass.exe
+Annotation : IPSec Policy agent endpoint
+Type : Local RPC service
+Named pipe : LRPC-8facd6a07e8c4c457a
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3d267954-eeb7-11d1-b94e-00c04fa3080d, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : LRPC-f54215bb60e94e9b4d
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12d4b7c8-77d5-11d1-8c24-00c04fa3080d, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : LRPC-f54215bb60e94e9b4d
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 4b112204-0e19-11d3-b42b-0000f81feb9f, version 1.0
+Description : SSDP service
+Windows process : unknow
+Type : Local RPC service
+Named pipe : LRPC-98421ca7472cd59e0e
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 0b6edbfa-4a24-4fc6-8a23-942b1eca65d1, version 1.0
+Description : Unknown RPC service
+Annotation : Spooler function endpoint
+Type : Local RPC service
+Named pipe : spoolss
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : ae33069b-a2a8-46ee-a235-ddfd339be281, version 1.0
+Description : Unknown RPC service
+Annotation : Spooler base remote object endpoint
+Type : Local RPC service
+Named pipe : spoolss
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 4a452661-8290-4b36-8fbe-7f4093a94978, version 1.0
+Description : Unknown RPC service
+Annotation : Spooler function endpoint
+Type : Local RPC service
+Named pipe : spoolss
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : dd490425-5325-4565-b774-7e27d6c09c24, version 1.0
+Description : Unknown RPC service
+Annotation : Base Firewall Engine API
+Type : Local RPC service
+Named pipe : LRPC-f17463e2be7c0ccb72
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 7f9d11bf-7fb9-436b-a812-b2d50c5d4c03, version 1.0
+Description : Unknown RPC service
+Annotation : Fw APIs
+Type : Local RPC service
+Named pipe : LRPC-f17463e2be7c0ccb72
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 2fb92682-6599-42dc-ae13-bd2ca89bd11c, version 1.0
+Description : Unknown RPC service
+Annotation : Fw APIs
+Type : Local RPC service
+Named pipe : LRPC-f17463e2be7c0ccb72
+
+Object UUID : 3bdb59a0-d736-4d44-9074-c1ee00000001
+UUID : 24019106-a203-4642-b88d-82dae9158929, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : LRPC-4118674d2b4453d7b4
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 7ea70bcf-48af-4f6a-8968-6a440754d5fa, version 1.0
+Description : Unknown RPC service
+Annotation : NSI server endpoint
+Type : Local RPC service
+Named pipe : OLE19B3BD93C5C04EB08650904E58A9
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 7ea70bcf-48af-4f6a-8968-6a440754d5fa, version 1.0
+Description : Unknown RPC service
+Annotation : NSI server endpoint
+Type : Local RPC service
+Named pipe : LRPC-b0f96ebb30a7a276e9
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3473dd4d-2e88-4006-9cba-22570909dd10, version 5.0
+Description : Unknown RPC service
+Annotation : WinHttp Auto-Proxy Service
+Type : Local RPC service
+Named pipe : OLE19B3BD93C5C04EB08650904E58A9
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3473dd4d-2e88-4006-9cba-22570909dd10, version 5.0
+Description : Unknown RPC service
+Annotation : WinHttp Auto-Proxy Service
+Type : Local RPC service
+Named pipe : LRPC-b0f96ebb30a7a276e9
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3473dd4d-2e88-4006-9cba-22570909dd10, version 5.0
+Description : Unknown RPC service
+Annotation : WinHttp Auto-Proxy Service
+Type : Local RPC service
+Named pipe : W32TIME_ALT
+
+Object UUID : 666f7270-6c69-7365-0000-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 6c637067-6569-746e-0000-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 24d1f7c7-76af-4f28-9ccd-7f6cb6468601
+UUID : 2eb08e3e-639f-4fba-97b1-14f878961076, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 736e6573-0000-0000-0000-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 736e6573-0000-0000-0000-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Local RPC service
+Named pipe : OLE8E215DE90B5A47978EC21A3E5660
+
+Object UUID : 736e6573-0000-0000-0000-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Local RPC service
+Named pipe : senssvc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 0a74ef1c-41a4-4e06-83ae-dc74fb1cdd53, version 1.0
+Description : Scheduler Service
+Windows process : svchost.exe
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 0a74ef1c-41a4-4e06-83ae-dc74fb1cdd53, version 1.0
+Description : Scheduler Service
+Windows process : svchost.exe
+Type : Local RPC service
+Named pipe : OLE8E215DE90B5A47978EC21A3E5660
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 0a74ef1c-41a4-4e06-83ae-dc74fb1cdd53, version 1.0
+Description : Scheduler Service
+Windows process : svchost.exe
+Type : Local RPC service
+Named pipe : senssvc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 1ff70682-0a51-30e8-076d-740be8cee98b, version 1.0
+Description : Scheduler Service
+Windows process : svchost.exe
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 1ff70682-0a51-30e8-076d-740be8cee98b, version 1.0
+Description : Scheduler Service
+Windows process : svchost.exe
+Type : Local RPC service
+Named pipe : OLE8E215DE90B5A47978EC21A3E5660
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 1ff70682-0a51-30e8-076d-740be8cee98b, version 1.0
+Description : Scheduler Service
+Windows process : svchost.exe
+Type : Local RPC service
+Named pipe : senssvc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 378e52b0-c0a9-11cf-822d-00aa0051e40f, version 1.0
+Description : Scheduler Service
+Windows process : svchost.exe
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 378e52b0-c0a9-11cf-822d-00aa0051e40f, version 1.0
+Description : Scheduler Service
+Windows process : svchost.exe
+Type : Local RPC service
+Named pipe : OLE8E215DE90B5A47978EC21A3E5660
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 378e52b0-c0a9-11cf-822d-00aa0051e40f, version 1.0
+Description : Scheduler Service
+Windows process : svchost.exe
+Type : Local RPC service
+Named pipe : senssvc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 86d35949-83c9-4044-b424-db363231fd0c, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 86d35949-83c9-4044-b424-db363231fd0c, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : OLE8E215DE90B5A47978EC21A3E5660
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 86d35949-83c9-4044-b424-db363231fd0c, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : senssvc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : a398e520-d59a-4bdd-aa7a-3c1e0303a511, version 1.0
+Description : Unknown RPC service
+Annotation : IKE/Authip API
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : a398e520-d59a-4bdd-aa7a-3c1e0303a511, version 1.0
+Description : Unknown RPC service
+Annotation : IKE/Authip API
+Type : Local RPC service
+Named pipe : OLE8E215DE90B5A47978EC21A3E5660
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : a398e520-d59a-4bdd-aa7a-3c1e0303a511, version 1.0
+Description : Unknown RPC service
+Annotation : IKE/Authip API
+Type : Local RPC service
+Named pipe : senssvc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 552d076a-cb29-4e44-8b6a-d15e59e2c0af, version 1.0
+Description : Unknown RPC service
+Annotation : IP Transition Configuration endpoint
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 552d076a-cb29-4e44-8b6a-d15e59e2c0af, version 1.0
+Description : Unknown RPC service
+Annotation : IP Transition Configuration endpoint
+Type : Local RPC service
+Named pipe : OLE8E215DE90B5A47978EC21A3E5660
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 552d076a-cb29-4e44-8b6a-d15e59e2c0af, version 1.0
+Description : Unknown RPC service
+Annotation : IP Transition Configuration endpoint
+Type : Local RPC service
+Named pipe : senssvc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 98716d03-89ac-44c7-bb8c-285824e51c4a, version 1.0
+Description : Unknown RPC service
+Annotation : XactSrv service
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 98716d03-89ac-44c7-bb8c-285824e51c4a, version 1.0
+Description : Unknown RPC service
+Annotation : XactSrv service
+Type : Local RPC service
+Named pipe : OLE8E215DE90B5A47978EC21A3E5660
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 98716d03-89ac-44c7-bb8c-285824e51c4a, version 1.0
+Description : Unknown RPC service
+Annotation : XactSrv service
+Type : Local RPC service
+Named pipe : senssvc
+
+Object UUID : 73736573-6f69-656e-6e76-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 73736573-6f69-656e-6e76-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Local RPC service
+Named pipe : OLE8E215DE90B5A47978EC21A3E5660
+
+Object UUID : 73736573-6f69-656e-6e76-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Local RPC service
+Named pipe : senssvc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 30b044a5-a225-43f0-b3a4-e060df91f9c1, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 30b044a5-a225-43f0-b3a4-e060df91f9c1, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : OLE8E215DE90B5A47978EC21A3E5660
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 30b044a5-a225-43f0-b3a4-e060df91f9c1, version 1.0
+Description : Unknown RPC service
+Type : Local RPC service
+Named pipe : senssvc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 7d814569-35b3-4850-bb32-83035fcebf6e, version 1.0
+Description : Unknown RPC service
+Annotation : IAS RPC server
+Type : Local RPC service
+Named pipe : IUserProfile2
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 7d814569-35b3-4850-bb32-83035fcebf6e, version 1.0
+Description : Unknown RPC service
+Annotation : IAS RPC server
+Type : Local RPC service
+Named pipe : OLE8E215DE90B5A47978EC21A3E5660
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 7d814569-35b3-4850-bb32-83035fcebf6e, version 1.0
+Description : Unknown RPC service
+Annotation : IAS RPC server
+Type : Local RPC service
+Named pipe : senssvc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : f6beaff7-1e19-4fbb-9f8f-b89e2018337c, version 1.0
+Description : Unknown RPC service
+Annotation : Event log TCPIP
+Type : Local RPC service
+Named pipe : eventlog
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 30adc50c-5cbc-46ce-9a0e-91914789e23c, version 1.0
+Description : Unknown RPC service
+Annotation : NRP server endpoint
+Type : Local RPC service
+Named pipe : eventlog
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d5, version 1.0
+Description : DHCP Client Service
+Windows process : svchost.exe
+Annotation : DHCP Client LRPC Endpoint
+Type : Local RPC service
+Named pipe : eventlog
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d5, version 1.0
+Description : DHCP Client Service
+Windows process : svchost.exe
+Annotation : DHCP Client LRPC Endpoint
+Type : Local RPC service
+Named pipe : dhcpcsvc
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d6, version 1.0
+Description : Unknown RPC service
+Annotation : DHCPv6 Client LRPC Endpoint
+Type : Local RPC service
+Named pipe : eventlog
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d6, version 1.0
+Description : Unknown RPC service
+Annotation : DHCPv6 Client LRPC Endpoint
+Type : Local RPC service
+Named pipe : dhcpcsvc
+
+"
+"10736","","","None","10.8.20.18","tcp","445","DCE Services Enumeration","A DCE/RPC service is running on the remote host.","By sending a Lookup request to the portmapper (TCP 135 or epmapper
+PIPE) it was possible to enumerate the Distributed Computing
+Environment (DCE) services running on the remote port. Using this
+information it is possible to connect and bind to each service by
+sending an RPC request to the remote port/pipe.","n/a","","
+The following DCERPC services are available remotely :
+
+Object UUID : 765294ba-60bc-48b8-92e9-89fd77769d91
+UUID : d95afe70-a6d5-4259-822e-2c84da1ddb0d, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+Named pipe : \PIPE\InitShutdown
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : b08669ee-8cb5-43a5-a017-84fe00000000
+UUID : 76f226c3-ec14-4325-8a99-6a46348418af, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+Named pipe : \PIPE\InitShutdown
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Remote RPC service
+Named pipe : \pipe\lsass
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Remote RPC service
+Named pipe : \PIPE\protected_storage
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3d267954-eeb7-11d1-b94e-00c04fa3080d, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+Named pipe : \pipe\HydraLsPipe
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12d4b7c8-77d5-11d1-8c24-00c04fa3080d, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+Named pipe : \pipe\HydraLsPipe
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3473dd4d-2e88-4006-9cba-22570909dd10, version 5.0
+Description : Unknown RPC service
+Annotation : WinHttp Auto-Proxy Service
+Type : Remote RPC service
+Named pipe : \PIPE\W32TIME_ALT
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 1ff70682-0a51-30e8-076d-740be8cee98b, version 1.0
+Description : Scheduler Service
+Windows process : svchost.exe
+Type : Remote RPC service
+Named pipe : \PIPE\atsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 378e52b0-c0a9-11cf-822d-00aa0051e40f, version 1.0
+Description : Scheduler Service
+Windows process : svchost.exe
+Type : Remote RPC service
+Named pipe : \PIPE\atsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 86d35949-83c9-4044-b424-db363231fd0c, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+Named pipe : \PIPE\atsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : a398e520-d59a-4bdd-aa7a-3c1e0303a511, version 1.0
+Description : Unknown RPC service
+Annotation : IKE/Authip API
+Type : Remote RPC service
+Named pipe : \PIPE\atsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 552d076a-cb29-4e44-8b6a-d15e59e2c0af, version 1.0
+Description : Unknown RPC service
+Annotation : IP Transition Configuration endpoint
+Type : Remote RPC service
+Named pipe : \PIPE\atsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 98716d03-89ac-44c7-bb8c-285824e51c4a, version 1.0
+Description : Unknown RPC service
+Annotation : XactSrv service
+Type : Remote RPC service
+Named pipe : \PIPE\atsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 73736573-6f69-656e-6e76-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Remote RPC service
+Named pipe : \PIPE\atsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 73736573-6f69-656e-6e76-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Remote RPC service
+Named pipe : \PIPE\srvsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 30b044a5-a225-43f0-b3a4-e060df91f9c1, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+Named pipe : \PIPE\atsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 30b044a5-a225-43f0-b3a4-e060df91f9c1, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+Named pipe : \PIPE\srvsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 7d814569-35b3-4850-bb32-83035fcebf6e, version 1.0
+Description : Unknown RPC service
+Annotation : IAS RPC server
+Type : Remote RPC service
+Named pipe : \PIPE\atsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 7d814569-35b3-4850-bb32-83035fcebf6e, version 1.0
+Description : Unknown RPC service
+Annotation : IAS RPC server
+Type : Remote RPC service
+Named pipe : \PIPE\srvsvc
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : f6beaff7-1e19-4fbb-9f8f-b89e2018337c, version 1.0
+Description : Unknown RPC service
+Annotation : Event log TCPIP
+Type : Remote RPC service
+Named pipe : \pipe\eventlog
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 30adc50c-5cbc-46ce-9a0e-91914789e23c, version 1.0
+Description : Unknown RPC service
+Annotation : NRP server endpoint
+Type : Remote RPC service
+Named pipe : \pipe\eventlog
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d5, version 1.0
+Description : DHCP Client Service
+Windows process : svchost.exe
+Annotation : DHCP Client LRPC Endpoint
+Type : Remote RPC service
+Named pipe : \pipe\eventlog
+Netbios name : \\WINDOWS-1A9OMOA
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d6, version 1.0
+Description : Unknown RPC service
+Annotation : DHCPv6 Client LRPC Endpoint
+Type : Remote RPC service
+Named pipe : \pipe\eventlog
+Netbios name : \\WINDOWS-1A9OMOA
+
+"
+"10736","","","None","10.8.20.18","tcp","49152","DCE Services Enumeration","A DCE/RPC service is running on the remote host.","By sending a Lookup request to the portmapper (TCP 135 or epmapper
+PIPE) it was possible to enumerate the Distributed Computing
+Environment (DCE) services running on the remote port. Using this
+information it is possible to connect and bind to each service by
+sending an RPC request to the remote port/pipe.","n/a","","
+The following DCERPC services are available on TCP port 49152 :
+
+Object UUID : 765294ba-60bc-48b8-92e9-89fd77769d91
+UUID : d95afe70-a6d5-4259-822e-2c84da1ddb0d, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+TCP Port : 49152
+IP : 10.8.20.18
+
+"
+"10736","","","None","10.8.20.18","tcp","49153","DCE Services Enumeration","A DCE/RPC service is running on the remote host.","By sending a Lookup request to the portmapper (TCP 135 or epmapper
+PIPE) it was possible to enumerate the Distributed Computing
+Environment (DCE) services running on the remote port. Using this
+information it is possible to connect and bind to each service by
+sending an RPC request to the remote port/pipe.","n/a","","
+The following DCERPC services are available on TCP port 49153 :
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : f6beaff7-1e19-4fbb-9f8f-b89e2018337c, version 1.0
+Description : Unknown RPC service
+Annotation : Event log TCPIP
+Type : Remote RPC service
+TCP Port : 49153
+IP : 10.8.20.18
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 30adc50c-5cbc-46ce-9a0e-91914789e23c, version 1.0
+Description : Unknown RPC service
+Annotation : NRP server endpoint
+Type : Remote RPC service
+TCP Port : 49153
+IP : 10.8.20.18
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d5, version 1.0
+Description : DHCP Client Service
+Windows process : svchost.exe
+Annotation : DHCP Client LRPC Endpoint
+Type : Remote RPC service
+TCP Port : 49153
+IP : 10.8.20.18
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d6, version 1.0
+Description : Unknown RPC service
+Annotation : DHCPv6 Client LRPC Endpoint
+Type : Remote RPC service
+TCP Port : 49153
+IP : 10.8.20.18
+
+"
+"10736","","","None","10.8.20.18","tcp","49154","DCE Services Enumeration","A DCE/RPC service is running on the remote host.","By sending a Lookup request to the portmapper (TCP 135 or epmapper
+PIPE) it was possible to enumerate the Distributed Computing
+Environment (DCE) services running on the remote port. Using this
+information it is possible to connect and bind to each service by
+sending an RPC request to the remote port/pipe.","n/a","","
+The following DCERPC services are available on TCP port 49154 :
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 86d35949-83c9-4044-b424-db363231fd0c, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+TCP Port : 49154
+IP : 10.8.20.18
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : a398e520-d59a-4bdd-aa7a-3c1e0303a511, version 1.0
+Description : Unknown RPC service
+Annotation : IKE/Authip API
+Type : Remote RPC service
+TCP Port : 49154
+IP : 10.8.20.18
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 552d076a-cb29-4e44-8b6a-d15e59e2c0af, version 1.0
+Description : Unknown RPC service
+Annotation : IP Transition Configuration endpoint
+Type : Remote RPC service
+TCP Port : 49154
+IP : 10.8.20.18
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 98716d03-89ac-44c7-bb8c-285824e51c4a, version 1.0
+Description : Unknown RPC service
+Annotation : XactSrv service
+Type : Remote RPC service
+TCP Port : 49154
+IP : 10.8.20.18
+
+Object UUID : 73736573-6f69-656e-6e76-000000000000
+UUID : c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1.0
+Description : Unknown RPC service
+Annotation : Impl friendly name
+Type : Remote RPC service
+TCP Port : 49154
+IP : 10.8.20.18
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 30b044a5-a225-43f0-b3a4-e060df91f9c1, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+TCP Port : 49154
+IP : 10.8.20.18
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 7d814569-35b3-4850-bb32-83035fcebf6e, version 1.0
+Description : Unknown RPC service
+Annotation : IAS RPC server
+Type : Remote RPC service
+TCP Port : 49154
+IP : 10.8.20.18
+
+"
+"10736","","","None","10.8.20.18","tcp","49155","DCE Services Enumeration","A DCE/RPC service is running on the remote host.","By sending a Lookup request to the portmapper (TCP 135 or epmapper
+PIPE) it was possible to enumerate the Distributed Computing
+Environment (DCE) services running on the remote port. Using this
+information it is possible to connect and bind to each service by
+sending an RPC request to the remote port/pipe.","n/a","","
+The following DCERPC services are available on TCP port 49155 :
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3d267954-eeb7-11d1-b94e-00c04fa3080d, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+TCP Port : 49155
+IP : 10.8.20.18
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12d4b7c8-77d5-11d1-8c24-00c04fa3080d, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+TCP Port : 49155
+IP : 10.8.20.18
+
+"
+"10736","","","None","10.8.20.18","tcp","49156","DCE Services Enumeration","A DCE/RPC service is running on the remote host.","By sending a Lookup request to the portmapper (TCP 135 or epmapper
+PIPE) it was possible to enumerate the Distributed Computing
+Environment (DCE) services running on the remote port. Using this
+information it is possible to connect and bind to each service by
+sending an RPC request to the remote port/pipe.","n/a","","
+The following DCERPC services are available on TCP port 49156 :
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 367abb81-9844-35f1-ad32-98f038001003, version 2.0
+Description : Service Control Manager
+Windows process : svchost.exe
+Type : Remote RPC service
+TCP Port : 49156
+IP : 10.8.20.18
+
+"
+"10736","","","None","10.8.20.18","tcp","49157","DCE Services Enumeration","A DCE/RPC service is running on the remote host.","By sending a Lookup request to the portmapper (TCP 135 or epmapper
+PIPE) it was possible to enumerate the Distributed Computing
+Environment (DCE) services running on the remote port. Using this
+information it is possible to connect and bind to each service by
+sending an RPC request to the remote port/pipe.","n/a","","
+The following DCERPC services are available on TCP port 49157 :
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 12345778-1234-abcd-ef00-0123456789ac, version 1.0
+Description : Security Account Manager
+Windows process : lsass.exe
+Type : Remote RPC service
+TCP Port : 49157
+IP : 10.8.20.18
+
+"
+"10736","","","None","10.8.20.18","tcp","49224","DCE Services Enumeration","A DCE/RPC service is running on the remote host.","By sending a Lookup request to the portmapper (TCP 135 or epmapper
+PIPE) it was possible to enumerate the Distributed Computing
+Environment (DCE) services running on the remote port. Using this
+information it is possible to connect and bind to each service by
+sending an RPC request to the remote port/pipe.","n/a","","
+The following DCERPC services are available on TCP port 49224 :
+
+Object UUID : 00000000-0000-0000-0000-000000000000
+UUID : 3357951c-a1d1-47db-a278-ab945d063d03, version 1.0
+Description : Unknown RPC service
+Type : Remote RPC service
+TCP Port : 49224
+IP : 10.8.20.18
+
+"
+"11219","","","None","10.8.20.18","tcp","25","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 25/tcp was found to be open"
+"11219","","","None","10.8.20.18","tcp","80","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 80/tcp was found to be open"
+"11219","","","None","10.8.20.18","tcp","110","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 110/tcp was found to be open"
+"11219","","","None","10.8.20.18","tcp","135","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 135/tcp was found to be open"
+"11219","","","None","10.8.20.18","tcp","443","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
+quick even against a firewalled target. 
+
+Note that SYN scans are less intrusive than TCP (full connect) scans
+against broken services, but they might cause problems for less robust
+firewalls and also leave unclosed connections on the remote target, if
+the network is loaded.","Protect your target with an IP filter.","","Port 443/tcp was found to be open"
+"19506","","","None","10.8.20.18","tcp","0","Nessus Scan Information","This plugin displays information about the Nessus scan.","This plugin displays, for each tested host, information about the
+scan itself :
+
+  - The version of the plugin set.
+  - The type of scanner (Nessus or Nessus Home).
+  - The version of the Nessus Engine.
+  - The port scanner(s) used.
+  - The port range scanned.
+  - Whether credentialed or third-party patch management
+    checks are possible.
+  - The date of the scan.
+  - The duration of the scan.
+  - The number of hosts scanned in parallel.
+  - The number of checks done in parallel.","n/a","","Information about this scan : 
+
+Nessus version : 8.7.1
+Plugin feed version : 201909121710
+Scanner edition used : Nessus
+
+ERROR: Your plugins have not been updated since 2019/9/12
+Performing a scan with an older plugin set will yield out-of-date results and
+produce an incomplete audit. Please run nessus-update-plugins to get the
+newest vulnerability checks from Nessus.org.
+
+Scan type : Normal
+Scan policy used : Advanced Scan
+Scanner IP : 192.168.52.130
+Port scanner(s) : nessus_syn_scanner 
+Port range : default
+Thorough tests : no
+Experimental tests : no
+Paranoia level : 1
+Report verbosity : 1
+Safe checks : yes
+Optimize the test : yes
+Credentialed checks : no
+Patch management checks : None
+CGI scanning : disabled
+Web application tests : disabled
+Max hosts : 100
+Max checks : 5
+Recv timeout : 5
+Backports : None
+Allow post-scan editing: Yes
+Scan Start Date : 2019/11/13 11:12 CST
+Scan duration : 453 sec
+"
+"24260","","","None","10.8.20.18","tcp","80","HyperText Transfer Protocol (HTTP) Information","Some information about the remote HTTP configuration can be extracted.","This test gives some information about the remote HTTP protocol - the
+version used, whether HTTP Keep-Alive and HTTP pipelining are enabled,
+etc... 
+
+This test is informational only and does not denote any security
+problem.","n/a","","
+Response Code : HTTP/1.1 200 OK
+
+Protocol version : HTTP/1.1
+SSL : no
+Keep-Alive : no
+Headers :
+
+  Content-Type: text/html
+  Last-Modified: Thu, 09 Feb 2017 14:53:00 GMT
+  Accept-Ranges: bytes
+  ETag: ""02ef834e482d21:0""
+  Server: Microsoft-IIS/7.5
+  X-Powered-By: ASP.NET
+  Date: Wed, 13 Nov 2019 03:17:32 GMT
+  Content-Length: 689
+  
+Response Body :
+
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Strict//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+<head>
+<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1"" />
+<title>IIS7</title>
+<style type=""text/css"">
+<!--
+body {
+	color:#000000;
+	background-color:#B3B3B3;
+	margin:0;
+}
+
+#container {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	}
+
+a img {
+	border:none;
+}
+
+-->
+</style>
+</head>
+<body>
+<div id=""container"">
+<a href=""http://go.microsoft.com/fwlink/?linkid=66138&amp;clcid=0x409""><img src=""welcome.png"" alt=""IIS7"" width=""571"" height=""411"" /></a>
+</div>
+</body>
+</html>"
+"43111","","","None","10.8.20.18","tcp","80","HTTP Methods Allowed (per directory)","This plugin determines which HTTP methods are allowed on various CGI
+directories.","By calling the OPTIONS method, it is possible to determine which HTTP
+methods are allowed on each directory.
+
+The following HTTP methods are considered insecure:
+  PUT, DELETE, CONNECT, TRACE, HEAD
+
+Many frameworks and languages treat 'HEAD' as a 'GET' request, albeit
+one without any body in the response. If a security constraint was
+set on 'GET' requests such that only 'authenticatedUsers' could
+access GET requests for a particular servlet or resource, it would be
+bypassed for the 'HEAD' version. This allowed unauthorized blind
+submission of any privileged GET request.
+
+As this list may be incomplete, the plugin also tests - if 'Thorough
+tests' are enabled or 'Enable web applications tests' is set to 'yes'
+in the scan policy - various known HTTP methods on each directory and
+considers them as unsupported if it receives a response code of 400,
+403, 405, or 501.
+
+Note that the plugin output is only informational and does not
+necessarily indicate the presence of any security vulnerabilities.","n/a","http://www.nessus.org/u?d9c03a9a
+http://www.nessus.org/u?b019cbdb
+https://www.owasp.org/index.php/Test_HTTP_Methods_(OTG-CONFIG-006)","Based on the response to an OPTIONS request :
+
+  - HTTP methods  GET  HEAD  POST  TRACE OPTIONS are allowed on : 
+
+    /
+
+"
+"45590","","","None","10.8.20.18","tcp","0","Common Platform Enumeration (CPE)","It was possible to enumerate CPE names that matched on the remote
+system.","By using information obtained from a Nessus scan, this plugin reports
+CPE (Common Platform Enumeration) matches for various hardware and
+software products found on a host. 
+
+Note that if an official CPE is not available for the product, this
+plugin computes the best possible CPE based on the information
+available from the scan.","n/a","http://cpe.mitre.org/
+https://nvd.nist.gov/products/cpe","
+Following application CPE matched on the remote system :
+
+  cpe:/a:microsoft:iis:7.5 -> Microsoft Internet Information Services (IIS) 7.5
+"
